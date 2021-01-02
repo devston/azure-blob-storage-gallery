@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Upload file";
+}
+
+@using (Html.BeginForm("Upload", "Home", FormMethod.Post))
+{
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <input class="margin-bottom-15" type="file" id="file" name="selectFiles" multiple />
+            <button class="btn btn-primary" type="submit">Upload</button>
+            @Html.ActionLink("Back", "Gallery", "Home", null, new { @class = "btn btn-default" })
+        </div>
+    </div>
+}
