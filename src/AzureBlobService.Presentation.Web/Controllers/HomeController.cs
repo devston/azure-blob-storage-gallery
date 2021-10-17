@@ -44,6 +44,7 @@ namespace AzureBlobService.Presentation.Web.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Upload()
         {
             try

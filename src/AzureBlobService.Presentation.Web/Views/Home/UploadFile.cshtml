@@ -1,14 +1,11 @@
 ﻿@{
-    ViewBag.Title = "Upload file";
+    ViewData["Title"] = "Upload file";
 }
 
-@using (Html.BeginForm("Upload", "Home", FormMethod.Post))
-{
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <input class="margin-bottom-15" type="file" id="file" name="selectFiles" multiple />
-            <button class="btn btn-primary" type="submit">Upload</button>
-            @Html.ActionLink("Back", "Gallery", "Home", null, new { @class = "btn btn-default" })
-        </div>
+<form class="card card-default" asp-action="Upload" asp-controller="Home" method="post">
+    <div class="card-body">
+        <input class="mb-3" type="file" id="file" name="selectFiles" multiple />
+        <button class="btn btn-primary" type="submit">Upload</button>
+        <a class="btn btn-outline-secondary" asp-action="Gallery" asp-controller="Home">Back</a>
     </div>
-}
+</form>
