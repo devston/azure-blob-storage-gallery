@@ -2,9 +2,9 @@
 A simple azure blob storage example in the form of a photo gallery. This app provides the ability to view any images in the storage container, upload new images and delete images.
 
 ## Technologies used
-- ASP.NET MVC 5
-- .NET 4.7.2
-- Azure Storage
+- ASP.NET Core MVC 5.0
+- .NET 5.0
+- Azure Storage.Blobs
 
 ## Running this sample
 1. You must replace the connection string with the values of an active Azure Storage Account. If you don't have an account, refer to the [Create a Storage Account](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account/) article.
