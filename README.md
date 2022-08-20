@@ -1,6 +1,8 @@
 # Azure Blob Storage Gallery
 A simple azure blob storage example in the form of a photo gallery. This app provides the ability to view any images in the storage container, upload new images and delete images.
 
+[![.NET](https://github.com/devston/azure-blob-storage-gallery/actions/workflows/dotnet.yml/badge.svg)](https://github.com/devston/azure-blob-storage-gallery/actions/workflows/dotnet.yml)
+
 ## Technologies used
 - ASP.NET Core MVC 5.0
 - .NET 5.0
